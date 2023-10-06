@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  background: #49A75D;
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+  color: white;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  background: #272D40;
+  width: 320px;
+  height: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 15px;
+}
+.item:hover .item-image {
+  translate: 0 -30px;
+  transform: rotate(-30deg);
+}
+.item .item-icon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+.item .item-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.4s linear;
+  transition: translate 0.4s linear;
+}
+.item .item-image img {
+  max-width: 90%;
+}
+.item .item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.item .item-content .item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4DAF54;
+}
+.item .item-content .item-text {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.item .item-slip {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.item .item-slip .item-size {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.item .item-slip .item-size .size {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: gray;
+}
+.item .item-slip .item-color {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+.item .item-slip .item-color .color {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.item .item-slip .item-btn {
+  display: flex;
+  column-gap: 15px;
+}
+.item .item-slip .item-btn .btn {
+  width: 80px;
+  height: 35px;
+  color: white;
+  background-color: #49A75D;
+  font-weight: 300;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: #4daf54;
+}
+
+.red {
+  background-color: red;
+}
+
+.black {
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
